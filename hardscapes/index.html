@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https://www.website.com/hardscapes/">
+
+        <meta name="description" content="Meta description for the page">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="New Leaf Complete Landscape Services"/>
+        <meta property="og:description" content="Meta description for the page"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.website.com/hardscapes/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo-light.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/landing-1920w.webp"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+        <link rel="stylesheet" href="/css/critical.css"/>
+        <link rel="stylesheet" href="/css/services.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                Lawn Work &amp; Irrigation Systems | New Leaf Complete Landscape Services
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo-light.png" decoding="async" alt="logo"
+                width="221" height="66">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" loading="lazy"
+                alt="logo" width="221" height="66">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu" aria-label="main navigation">
+            <ul>
+                <li class="" id="Home">
+                    
+                    <a  href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                <li class="dropdown" id="Services">
+                    
+                    <a class="dropdown-toggle" role="button" tabindex="0">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/powder-coating/">Powder Coating</a></li>
+                        <li><a href="/cerakote-coating/">Cerakote Coating</a></li>
+                        <li><a href="/sand-blasting/">Sand Blasting</a></li>
+                        <li><a href="/mobile-sand-blasting/">Mobile Sand Blasting</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="" id="About Us">
+                    
+                    <a  href="/about/">
+                        About Us
+                    </a>
+                    
+                </li>
+                <li class="" id="Contact">
+                    
+                    <a  href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                style="enable-background:new 0 0 480 480" xml:space="preserve">
+                <path
+                    d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+            </svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15"
+                height="15">
+        </button>
+    </div>
+</div>
+        <main id="main"><div id="banner-1402">
+    <div class="cs-container">
+        <span class="cs-int-title">Cerakote Coating Services</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/cerakote-coating" class="cs-link cs-active">Cerakote Coating</a>
+        </div>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/images/cerakotecoating.jpg">
+        <source media="(min-width: 601px)" srcset="/images/cerakotecoating.jpg">
+        <img decoding="async" src="/images/cerakotecoating.jpg" alt="Cerakote coated engine manifold" width="1280"
+            height="568" aria-hidden="true">
+    </picture>
+</div>
+
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="/images/9.png">
+                    <source media="(min-width: 601px)" srcset="/images/9.png">
+                    <img loading="lazy" decoding="async" src="/images/9.png" alt="Cerakote coated firearm component"
+                        width="542" height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="gear icon"
+                        width="60" height="60">
+                    <span class="cs-desc">
+                        Specialized Ceramic Coating Experts
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="trophy icon"
+                            width="32" height="32">
+                        Extreme Heat Resistance
+                    </h3>
+                    <p class="cs-item-text">
+                        Ideal for high-temperature automotive and industrial components.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="check icon"
+                            width="32" height="32">
+                        Thin-Film Performance
+                    </h3>
+                    <p class="cs-item-text">
+                        Achieve superior protection without affecting component tolerances.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Premium <span class="cs-color">Cerakote Coating</span> Applications</h1>
+            <h2>Ultra-Durable Ceramic Finishes for Enhanced Performance</h2>
+            <h3>Advanced Protection for Engine Components and More</h3>
+            <h4>Corrosion, Abrasion, and Chemical Resistance</h4>
+            <p>
+                Nightmare Powder Coating offers specialized Cerakote coating services, providing an ultra-durable
+                ceramic finish that goes beyond conventional coatings. Cerakote is renowned for its exceptional
+                properties, including remarkable corrosion resistance, abrasion resistance, chemical resistance, and
+                high-temperature tolerance. This makes it an ideal solution for components exposed to extreme
+                conditions.
+            </p>
+            <p>
+                Our expert technicians meticulously apply Cerakote to a variety of parts, ensuring a thin, uniform,
+                and incredibly strong layer. From automotive headers and manifolds that endure intense heat to
+                valve covers requiring both protection and aesthetic appeal, Cerakote delivers superior performance
+                and a premium look. It's also widely used for firearms, industrial machinery, and other demanding
+                applications where durability is paramount.
+            </p>
+            <h3>Our Cerakote Coating Specialties Include:</h3>
+            <ol>
+                <li>Automotive Headers and Exhaust Systems</li>
+                <li>Engine Manifolds and Valve Covers</li>
+                <li>Brake Calipers and Suspension Components</li>
+                <li>Firearm Components (slides, frames, barrels)</li>
+                <li>Industrial and Marine Parts requiring extreme protection</li>
+            </ol>
+            <h4>Benefits of Choosing Cerakote:</h4>
+            <ul>
+                <li>Superior Heat Dissipation: Keeps components cooler and extends their lifespan.</li>
+                <li>Enhanced Hardness: Provides excellent scratch and chip resistance.</li>
+                <li>Corrosion Prevention: Protects against rust and chemical degradation.</li>
+                <li>Vast Color Options: Available in a wide range of colors for customization.</li>
+            </ul>
+            <p>
+                Invest in Cerakote for a finish that not only looks exceptional but also significantly extends the life
+                and performance of your valuable components.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section></main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo-light.png" alt="logo"
+                    width="264" height="78"></a>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/powder-coating">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li>Powder Coating</li>
+                    <li>Cerakote Coating</li>
+                    <li>Sand Blasting / Media Blasting</li>
+                    <li>Mobile Sand Blasting</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <!-- <li>
+                        <a href="/contact">First Address Line<br>Denver CO 80206</a>
+                    </li> -->
+                    <li>
+                        <a href="tel:+19892891344">+19892891344 </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:johnd.u.of.m@gmail.com">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a style="color: #fff" href="www.kalamazoowebsitedesign.com" target="_blank" rel="noopener">Kalamazoo Website
+            Design</a>
+        <span class="copyright"> Copyright 2025 - Present</span>
+    </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>
