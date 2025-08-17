@@ -1,0 +1,78 @@
+---
+layout: 'base.html'
+description: "Nightmare Coating"
+metaTitle: 'Nightmare Coating'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+  key: About Us
+  order: 300
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/powder-coating-valves.jpg', 'Powder Coating Facility', '', 'lazy', '(max-width: 850px) 850px,
+  1920px'%}
+</section>
+
+<section id="sbs">
+  <div class="cs-container">
+    <div class="cs-left">
+      {% image './src/images/7.png', 'Technician preparing metal for powder coating', 'cs-picture cs-picture1',
+      'lazy'%}
+      {% image './src/images/8.png', 'Close-up of a freshly powder coated part', 'cs-picture cs-picture2',
+      'lazy'%}
+    </div>
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">Experience the Nightmare Powder Coating Difference</h2>
+      <p class="cs-text">
+        At Nightmare Powder Coating, we’re driven by a passion for delivering the most durable and visually striking
+        finishes in the industry. With over 26 years of collective experience in powder coating, Cerakote
+        application, and abrasive blasting, we’ve built a reputation for precision, quality, and exceptional customer
+        service. Based in Carson City, MI, we proudly serve a diverse range of clients, from individual enthusiasts to
+        large-scale industrial partners.
+      </p>
+      <p class="cs-text">
+        Our journey began with a commitment to mastering the art and science of advanced surface finishes. We understand
+        that a superior coating isn't just about aesthetics; it's about providing unmatched protection, extending
+        component lifespan, and enhancing performance. That’s why we continuously invest in state-of-the-art equipment
+        and training, ensuring every project, no matter the size, meets our rigorous standards.
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          "Our dedication to quality and customer satisfaction is at the core of everything we do. We believe in
+          providing solutions that not only meet but exceed expectations, ensuring every piece leaves our facility with
+          the 'Nightmare' seal of unparalleled durability."
+        </p>
+        <span class="cs-name">The Nightmare Team</span>
+        <span class="cs-job">Dedicated to Coating Excellence</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
+          height="77">
+      </div>
+      <a href="/contact" class="button-solid">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Ready for a Finish That Lasts? <br> Get Your Project Started Today</h2>
+    <p>
+      Transform your components with our expert powder coating, Cerakote, and blasting services. Contact us for a
+      personalized quote.
+    </p>
+    <a href="/contact" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/5.png', 'Powder coated motorcycle parts', '', 'lazy', '(max-width: 400px) 400px,
+  (max-width: 850px) 850px, 1920'%}
+</section>
